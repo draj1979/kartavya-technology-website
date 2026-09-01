@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
 import { services } from "@/lib/data";
+import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Enterprise AI Engineering Services",
@@ -42,9 +42,14 @@ export default function ServicesPage() {
                   Bring us the business process — we&apos;ll scope the right engagement.
                 </p>
               </div>
-              <Link href="/contact" className="btn-primary whitespace-nowrap">
+              <a
+                href={siteConfig.calendly}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary whitespace-nowrap"
+              >
                 Talk to an AI Architect
-              </Link>
+              </a>
             </div>
           </FadeIn>
         </div>

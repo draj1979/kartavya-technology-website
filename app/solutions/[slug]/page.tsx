@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
 import { solutions } from "@/lib/data";
+import { siteConfig } from "@/lib/site";
 
 export function generateStaticParams() {
   return solutions.map((s) => ({ slug: s.slug }));
@@ -51,9 +52,14 @@ export default function SolutionDetailPage({ params }: { params: { slug: string 
                 Talk to an AI Architect about applying {solution.name.toLowerCase()} to a
                 specific process in your business.
               </p>
-              <Link href="/contact" className="btn-primary mt-5 w-full text-sm">
+              <a
+                href={siteConfig.calendly}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary mt-5 w-full text-sm"
+              >
                 Talk to an AI Architect
-              </Link>
+              </a>
             </div>
           </FadeIn>
         </div>

@@ -40,7 +40,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-medium text-[#25D366] hover:underline"
           >
-            Chat on WhatsApp — {siteConfig.whatsapp.display}
+            Chat on WhatsApp
           </a>
         </div>
 

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { navigation } from "@/lib/data";
+import { siteConfig } from "@/lib/site";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -58,9 +59,14 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Link href="/contact" className="btn-primary text-sm">
+          <a
+            href={siteConfig.calendly}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary text-sm"
+          >
             Talk to an AI Architect
-          </Link>
+          </a>
         </div>
 
         <button
@@ -109,13 +115,15 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <Link
-              href="/contact"
+            <a
+              href={siteConfig.calendly}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary mt-3 w-full text-sm"
               onClick={() => setOpen(false)}
             >
               Talk to an AI Architect
-            </Link>
+            </a>
           </div>
         </div>
       )}

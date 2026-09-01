@@ -5,6 +5,7 @@ import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
 import FlowDiagram from "@/components/FlowDiagram";
 import { caseStudies } from "@/lib/data";
+import { siteConfig } from "@/lib/site";
 
 export function generateStaticParams() {
   return caseStudies.map((cs) => ({ slug: cs.slug }));
@@ -82,9 +83,14 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
               <p className="mt-3 leading-relaxed text-text-secondary">{cs.outcome}</p>
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/contact" className="btn-primary">
+              <a
+                href={siteConfig.calendly}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
                 Talk to an AI Architect
-              </Link>
+              </a>
               <Link href="/case-studies" className="btn-secondary">
                 View all case studies
               </Link>

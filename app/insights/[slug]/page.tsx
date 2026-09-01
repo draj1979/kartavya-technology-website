@@ -36,11 +36,20 @@ export default function InsightPostPage({ params }: { params: { slug: string } }
         <div className="container-page max-w-3xl">
           <FadeIn>
             <div className="flex flex-col gap-5">
-              {post.body.map((para, i) => (
-                <p key={i} className="text-base leading-relaxed text-text-secondary">
-                  {para}
-                </p>
-              ))}
+              {post.body.map((para, i) =>
+                para.startsWith("## ") ? (
+                  <h2
+                    key={i}
+                    className="mt-4 text-xl font-semibold tracking-tight text-text-primary first:mt-0 md:text-2xl"
+                  >
+                    {para.slice(3)}
+                  </h2>
+                ) : (
+                  <p key={i} className="text-base leading-relaxed text-text-secondary">
+                    {para}
+                  </p>
+                )
+              )}
             </div>
             <Link href="/insights" className="btn-secondary mt-10 inline-flex">
               ← Back to Insights

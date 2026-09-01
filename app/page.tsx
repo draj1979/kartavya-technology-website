@@ -71,9 +71,14 @@ export default function HomePage() {
                 recruitment to knowledge work and business operations.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link href="/contact" className="btn-primary">
+                <a
+                  href={siteConfig.calendly}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
                   Talk to an AI Architect
-                </Link>
+                </a>
                 <Link href="/solutions" className="btn-secondary">
                   Explore AI Solutions
                 </Link>
@@ -409,9 +414,14 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-                <Link href="/contact" className="btn-primary whitespace-nowrap">
+                <a
+                  href={siteConfig.calendly}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary whitespace-nowrap"
+                >
                   Talk to an AI Architect
-                </Link>
+                </a>
                 <Link href="/solutions" className="btn-secondary whitespace-nowrap">
                   Explore Our Solutions
                 </Link>
