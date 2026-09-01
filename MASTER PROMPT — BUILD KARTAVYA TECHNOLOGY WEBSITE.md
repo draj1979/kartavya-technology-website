@@ -197,13 +197,13 @@ Each card should have a "Learn More" interaction or link to a dedicated solution
 
 ---
 
-# 7. CASE STUDY — SUNDARAM FINANCE
+# 7. CASE STUDY — Axiominds Consulting
 
 This must be a prominent section on the homepage.
 
 Headline:
 
-# AI Hiring Agent for Sundaram Finance
+# AI Hiring Agent for Axiominds Consulting
 
 Subheadline:
 
@@ -211,7 +211,7 @@ Subheadline:
 
 Explain the challenge:
 
-Sundaram Finance was struggling to recruit sales executives because many candidates left within the first month of joining.
+Axiominds Consulting was struggling to recruit sales executives because many candidates left within the first month of joining.
 
 The challenge was not simply generating more candidates. The organization needed to identify candidates whose expectations, motivation, communication, experience and understanding of the sales role were better aligned with the actual requirements of the job.
 
@@ -553,7 +553,7 @@ Create a dedicated Case Studies page.
 
 Initially include:
 
-## Sundaram Finance
+## Axiominds Consulting
 
 AI Hiring Agent
 

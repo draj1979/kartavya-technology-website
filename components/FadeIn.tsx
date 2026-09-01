@@ -17,6 +17,12 @@ export default function FadeIn({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    if (typeof IntersectionObserver === "undefined") {
+      setVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -26,10 +32,20 @@ export default function FadeIn({
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.1, rootMargin: "0px 0px -10% 0px" }
     );
     observer.observe(el);
-    return () => observer.disconnect();
+
+    // Safety net: some mobile browsers delay or skip the initial
+    // intersection check (especially for content already in view on
+    // load), which can leave the element stuck at opacity: 0. Force it
+    // visible after a short delay regardless of what the observer does.
+    const fallback = window.setTimeout(() => setVisible(true), 1000);
+
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(fallback);
+    };
   }, []);
 
   return (

@@ -41,13 +41,13 @@ Deploy by uploading the contents of `out/` to any static host.
 
 ## Pages
 
-- `/` — homepage (hero, trust bar, problem statement, solutions, Sundaram
-  Finance case study, agentic AI section, build process, services,
+- `/` — homepage (hero, trust bar, problem statement, solutions, Axiominds
+  Consulting case study, agentic AI section, build process, services,
   industries, founder, contact CTA)
 - `/solutions`, `/solutions/[slug]` — 6 solutions (ai-agents, customer-ai,
   recruitment-ai, knowledge-ai, operations-ai, developer-ai)
 - `/services` — 8 services
-- `/case-studies`, `/case-studies/[slug]` — currently Sundaram Finance only;
+- `/case-studies`, `/case-studies/[slug]` — currently Axiominds Consulting only;
   add new entries to the `caseStudies` array in `lib/data.ts`
 - `/technology` — model-agnostic tech stack + technology partners
 - `/responsible-ai` — AI governance principles

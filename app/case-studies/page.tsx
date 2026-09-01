@@ -7,7 +7,7 @@ import { caseStudies } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Case Studies",
   description:
-    "Real enterprise AI agent implementations delivered by Kartavya Technology, including the AI Hiring Agent built for Sundaram Finance.",
+    "Real enterprise AI agent implementations delivered by Kartavya Technology, including the AI Hiring Agent built for Axiominds Consulting.",
 };
 
 const upcomingCategories = [

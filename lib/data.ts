@@ -255,13 +255,13 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    slug: "sundaram-finance",
-    client: "Sundaram Finance",
-    title: "AI Hiring Agent for Sundaram Finance",
+    slug: "axiominds-consulting",
+    client: "Axiominds Consulting",
+    title: "AI Hiring Agent for Axiominds Consulting",
     subtitle:
       "Turning candidate screening into an intelligent, automated hiring workflow.",
     challenge:
-      "Sundaram Finance was struggling to recruit sales executives because many candidates left within the first month of joining. The challenge was not simply generating more candidates — the organization needed to identify candidates whose expectations, motivation, communication, experience and understanding of the sales role were better aligned with the actual requirements of the job.",
+      "Axiominds Consulting was struggling to recruit sales executives because many candidates left within the first month of joining. The challenge was not simply generating more candidates — the organization needed to identify candidates whose expectations, motivation, communication, experience and understanding of the sales role were better aligned with the actual requirements of the job.",
     solutionIntro:
       "Kartavya built an OpenClaw-based AI Hiring Expert that screens candidates through structured, role-specific conversations before they reach a human recruiter.",
     agentCapabilities: [
