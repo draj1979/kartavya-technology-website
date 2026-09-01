@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 import FlowDiagram from "@/components/FlowDiagram";
+import AgentArchitectureGraphic from "@/components/AgentArchitectureGraphic";
 import {
   solutions,
   services,
@@ -420,40 +421,5 @@ export default function HomePage() {
         </div>
       </section>
     </>
-  );
-}
-
-function AgentArchitectureGraphic() {
-  const nodes = [
-    { label: "CRM", x: 40, y: 40 },
-    { label: "ERP", x: 360, y: 40 },
-    { label: "Databases", x: 40, y: 260 },
-    { label: "APIs", x: 360, y: 260 },
-    { label: "Knowledge Base", x: 40, y: 150 },
-    { label: "Employees", x: 360, y: 150 },
-  ];
-  return (
-    <svg viewBox="0 0 400 300" className="h-auto w-full" role="img" aria-label="Diagram of an AI agent connected to enterprise systems including CRM, ERP, databases, APIs, knowledge bases and employees">
-      <rect x="150" y="120" width="100" height="60" rx="10" fill="#111827" stroke="#3b82f6" strokeWidth="1.5" />
-      <text x="200" y="155" textAnchor="middle" fill="#f8fafc" fontSize="13" fontWeight="600">
-        AI Agent
-      </text>
-      {nodes.map((n) => (
-        <g key={n.label}>
-          <line
-            x1={200}
-            y1={150}
-            x2={n.x + 55}
-            y2={n.y + 15}
-            stroke="#1f2937"
-            strokeWidth="1.5"
-          />
-          <rect x={n.x} y={n.y} width="110" height="34" rx="6" fill="#0f172a" stroke="#1f2937" />
-          <text x={n.x + 55} y={n.y + 21} textAnchor="middle" fill="#94a3b8" fontSize="11">
-            {n.label}
-          </text>
-        </g>
-      ))}
-    </svg>
   );
 }
