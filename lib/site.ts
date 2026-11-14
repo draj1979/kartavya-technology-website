@@ -17,8 +17,8 @@ export const siteConfig = {
     country: "India",
   },
   whatsapp: {
-    number: "917795691794",
-    display: "+91 77956 91794",
+    number: "919180390353",
+    display: "+91 91803 90353",
     defaultMessage:
       "Hi Kartavya Technology, I'd like to talk to an AI Architect about an enterprise AI use case.",
   },
