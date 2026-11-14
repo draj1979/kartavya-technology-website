@@ -81,6 +81,12 @@ export default function Footer() {
             <br />
             {siteConfig.address.country}
           </address>
+          <a
+            href={`tel:${siteConfig.officePhone.number}`}
+            className="mt-2 inline-block text-sm text-text-secondary hover:text-text-primary"
+          >
+            {siteConfig.officePhone.display}
+          </a>
           <div className="mt-4 flex gap-4">
             <a
               href={siteConfig.companyLinkedIn}

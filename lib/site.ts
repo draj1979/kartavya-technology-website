@@ -16,6 +16,10 @@ export const siteConfig = {
     postalCode: "560102",
     country: "India",
   },
+  officePhone: {
+    number: "+918064345206",
+    display: "080-64345206",
+  },
   whatsapp: {
     number: "919180390353",
     display: "+91 91803 90353",
